@@ -30,11 +30,7 @@ a {
 	color: black;
 }
 
-/*navbar css*/
-
-/*li>a {
-	padding-bottom: 15px;
-}*/
+/*--------navbar CSS---------*/
 
 .brand,
 .address-bar {
@@ -87,6 +83,62 @@ a {
 .navbar-default {
         background: rgba(123, 158, 168, 0.9);
 }
+
+
+
+/*------- cards CSS -------*/
+.container {
+		margin: 20;
+		width: 100%;
+	}
+
+img {
+	border-radius: 5px 5px 0px 0px;
+	/*box-shadow: 1.5px 1.5px 1.5px black;*/
+}
+
+hr {
+	max-width: 200px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.box {
+	margin-top: 20px;
+	background: rgba(255,255,255,0.8);
+	border-radius: 10px 10px 0px 0px;
+	box-shadow: 2px 2px 2px black;
+}
+
+.main {
+	margin-right: 50px;
+	margin-left:  50px;
+}
+
+.card {
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 20px;
+	width: 100%;
+	/*border-radius: 10px 10px 0px 0px;*/
+	box-shadow: 2px 2px 2px black;
+}
+
+.card_image{
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.card_head{
+	margin-top: 0px;
+	margin-bottom: 15px;
+	/*text-shadow: .5px .5px .5px black;*/
+}
+/*------- CSS for cards-------*/
+
+
+
 
 
 @media screen and (min-width:768px) {
@@ -147,6 +199,52 @@ a {
         table-layout: fixed;
         font-size: 1.25em;
     }
+
+    p {
+		font-size: 14px;
+	}
+
+	hr {
+		max-width: 350px;
+	}
+
+	.card {
+		width: 24%;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	.main {
+		margin: 0;
+	}
+
+	.row {
+		margin-bottom: 20px;
+		width: 100%;
+	}
+
+	.container {
+		margin: 20;
+		width: 100%;
+	}
 }
+
+/*@media screen and (min-width:992px) {
+	.navbar-nav>li>a {
+		font-size: 20px;
+		padding: 35px 45px;
+	}
+
+	.card {
+		width: 46%;
+		padding-top: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.row {
+		text-align: center;
+	}
+}*/
 
 
