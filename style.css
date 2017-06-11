@@ -1,0 +1,152 @@
+body {
+	background: url("lib/images/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: none;
+    font-family: 'Tangerine', cursive;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+p {
+	font-size: 12px;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/*navbar css*/
+
+/*li>a {
+	padding-bottom: 15px;
+}*/
+
+.brand,
+.address-bar {
+	display: none;
+}
+
+
+.navbar-default .navbar-brand {
+	font-family: 'Tangerine', cursive;
+	color: #FFFFF0;
+	text-shadow: 1px 1px 1px black;
+	text-transform: none;
+	font-size: 2em;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: #FFFFF0;
+	background-color: #FFFFF0;
+}
+
+.address-bar {
+	color: #FFFFF0;
+	font-weight: 900;
+	font-family: 'Raleway', sans-serif;
+	text-shadow: 1px 1px 1px black;
+}
+
+.navbar-nav>li>a {
+	font-size: 16px;
+	text-align: center;
+	color: #FFFFF0;
+	text-shadow: 1px 1px 1px black;
+	
+}
+
+.navbar-nav>li>a:hover {
+	transform: scale(1.15, 1.15);
+	transition: scale 4000 ease;
+	text-shadow: 2px 2px 2px black;
+	color: #FFFFF0;
+
+}
+
+.navbar-collapse {
+	margin-bottom: 15px;
+}
+
+
+
+.navbar-default {
+        background: rgba(123, 158, 168, 0.9);
+}
+
+
+@media screen and (min-width:768px) {
+    .brand {
+        display: inherit;
+        margin: ;
+        padding: 10px;
+        text-align: center;
+        text-shadow: 1px 1px 1px black;
+        font-family: "Tangerine", cursive;
+        font-size: 5em;
+        font-weight: 700;
+        line-height: normal;
+        color: #FFFFF0;
+    }
+
+    .address-bar {
+        display: inherit;
+        margin: 0;
+        padding: 0 0 40px;
+        text-align: center;
+        text-shadow: 1px 1px 1px black;
+        text-transform: uppercase;
+        font-size: 1.1em;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: #FFFFF0;
+    }
+
+    .navbar {
+        border-radius: 0;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar-default {
+        border: none;
+        background: rgba(123, 158, 168, 0.9);
+    }
+
+    .nav>li>a {
+        padding: 25px;
+
+    }
+
+    .navbar-default
+    .navbar-nav>li>a {
+        line-height: normal;
+        color: #FFFFF0;
+    }
+
+    .navbar-nav {
+        display: table;
+        float: none;
+        margin: 0 auto;
+        table-layout: fixed;
+        font-size: 1.25em;
+    }
+}
+
+
