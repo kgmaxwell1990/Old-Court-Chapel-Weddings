@@ -84,6 +84,7 @@ a {
         background: rgba(123, 158, 168, 0.9);
 }
 
+/*--------end navbar CSS---------*/
 
 
 /*------- cards CSS -------*/
@@ -93,7 +94,7 @@ a {
 	}
 
 img {
-	border-radius: 5px 5px 0px 0px;
+	border-radius: 5px 5px 5px 5px;
 	/*box-shadow: 1.5px 1.5px 1.5px black;*/
 }
 
@@ -104,9 +105,10 @@ hr {
 }
 
 .box {
-	margin-top: 20px;
+	margin: 20px;
+	padding: 10px;
 	background: rgba(255,255,255,0.8);
-	border-radius: 10px 10px 0px 0px;
+	/*border-radius: 10px 10px 0px 0px;*/
 	box-shadow: 2px 2px 2px black;
 }
 
@@ -118,7 +120,7 @@ hr {
 .card {
 	text-align: center;
 	background-color: rgba(255, 255, 255, 0.8);
-	margin-bottom: 20px;
+	margin: 20px;
 	width: 100%;
 	/*border-radius: 10px 10px 0px 0px;*/
 	box-shadow: 2px 2px 2px black;
@@ -134,11 +136,74 @@ hr {
 	margin-top: 0px;
 	margin-bottom: 15px;
 	/*text-shadow: .5px .5px .5px black;*/
+
 }
-/*------- CSS for cards-------*/
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align: center;;
+}
+/*------- end CSS for cards-------*/
 
 
+/*------- CSS for footer-------*/
+footer {
+  background-color: rgba(255, 255, 255, 0.8);
+}
 
+footer p {
+    margin: 0;
+    padding: 50px 0;
+}
+
+/*------- end CSS for footer-------*/
+
+
+/*------- accordion list CSS-------*/
+.accordion {
+	background: linear-gradient(to bottom right, white, #F8F8F8);
+	max-width: 400px;
+	background: white;
+	margin: 0 auto;
+  box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+	border-bottom: 1px solid #DDE0E7;
+	color: #2a313a;
+	cursor: pointer;
+	font-weight: 700;
+	padding: 1.5rem;
+}
+
+.accordion-header:hover {
+	background: #F6F7F9;
+}
+
+.accordion-content {
+	display: none;
+	border-bottom: 1px solid #DDE0E7;
+	background: #F6F7F9;
+	padding: 1.5rem;
+	color: #4a5666;
+}
+
+.accordion-header::before {
+	content: '';
+	vertical-align: middle;
+	display: inline-block;
+	width: .75rem;
+	height: .75rem;
+	border-radius: 50%;
+	background-color: #B1B5BE;
+	margin-right: .75rem;
+}
+
+.active.accordion-header::before {
+	background-color: #FC6468;
+}
+/*------- end accordion list CSS-------*/
 
 
 @media screen and (min-width:768px) {
