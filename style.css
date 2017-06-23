@@ -1,10 +1,17 @@
 body {
+
 	background: url("lib/images/background.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 	font-family: 'Raleway', sans-serif;
+	position: relative;
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
 }
 
 h1,
@@ -54,19 +61,20 @@ a {
 .address-bar {
 	color: #FFFFF0;
 	font-weight: 900;
-	font-family: 'Raleway', sans-serif;
+	font-family: Raleway, sans-serif;
 	text-shadow: 1px 1px 1px black;
 }
 
-.navbar-nav>li>a {
+.navbar-default .navbar-nav>li>a {
 	font-size: 16px;
+	font-family: Raleway;
 	text-align: center;
 	color: #FFFFF0;
 	text-shadow: 1px 1px 1px black;
 	
 }
 
-.navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a:hover {
 	transform: scale(1.15, 1.15);
 	transition: scale 4000 ease;
 	text-shadow: 2px 2px 2px black;
@@ -87,64 +95,59 @@ a {
 /*--------end navbar CSS---------*/
 
 
-/*------- cards CSS -------*/
-.container {
-		margin: 20;
-		width: 100%;
-	}
 
-img {
+
+/*------- cards CSS -------*/
+
+#cards {
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align: center;
+	margin-top: 0px;
+}
+
+.card {
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.8);
+	margin: 0px 0px 20px 0px;
+/*	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 20px;*/
+	width: 100%;
+	border-radius: 10px 10px 0px 0px;
+/*    -webkit-box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.75);*/
+}
+
+
+.card > img {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 5px;
 	border-radius: 5px 5px 5px 5px;
-	/*box-shadow: 1.5px 1.5px 1.5px black;*/
+    -webkit-box-shadow:  1px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.75);
 }
 
 hr {
 	max-width: 200px;
 	margin-top: 10px;
 	margin-bottom: 5px;
+	color: gray;
+	background-color: gray;
+	height: 0.5px;
 }
 
-.box {
-	margin: 20px;
-	padding: 10px;
-	background: rgba(255,255,255,0.8);
-	/*border-radius: 10px 10px 0px 0px;*/
-	box-shadow: 2px 2px 2px black;
-}
-
-.main {
-	margin-right: 50px;
-	margin-left:  50px;
-}
-
-.card {
-	text-align: center;
-	background-color: rgba(255, 255, 255, 0.8);
-	margin-left: 0px;
-	margin-right: 0px;
-	width: 100%;
-	/*border-radius: 10px 10px 0px 0px;*/
-	box-shadow: 2px 2px 2px black;
-}
-
-.card_image{
-	width: 100%;
-	margin-top: 10px;
-	margin-bottom: 5px;
-}
-
-.card_head{
+.card_title{
 	margin-top: 0px;
 	margin-bottom: 15px;
-	/*text-shadow: .5px .5px .5px black;*/
+	color: rgba(0,0,0,0.75);
+	font-size: 35px;
 
 }
 
-.row {
-	margin-left: 0px;
-	margin-right: 0px;
-	text-align: center;;
-}
 /*------- end CSS for cards-------*/
 
 
@@ -180,21 +183,9 @@ hr {
 /*------- end CSS for swiper-------*/
 
 
-/*------- CSS for footer-------*/
-footer {
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-footer p {
-    margin: 0;
-    padding: 50px 0;
-}
-
-/*------- end CSS for footer-------*/
-
 
 /*------- accordion list CSS-------*/
-.accordion {
+/*.accordion {
 	background: linear-gradient(to bottom right, white, #F8F8F8);
 	max-width: 400px;
 	background: white;
@@ -235,19 +226,107 @@ footer p {
 
 .active.accordion-header::before {
 	background-color: #FC6468;
+}*/
+
+
+/*#accordion p {
+	display: none;
+}*/
+
+/* Style the buttons that are used to open and close the accordion panel */
+#vendorslist {
+	padding: 20px;
 }
+.accordion {
+	position: relative;
+	width: 80%;
+}
+
+.panel {
+	position: relative;
+	background-color: #eee;
+}
+
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 0px 0px 0px 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.accordion > h1 {
+	width: 50%;
+	float: left;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
+
+.fa-plus {
+	float: right;
+	vertical-align: middle;
+}
+
+
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
 /*------- end accordion list CSS-------*/
+
+/*------- CSS for footer-------*/
+#footer {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 330px;
+  width: 100%;
+/*  position: absolute;*/
+  bottom: 0;
+  text-align: center;
+}
+
+footer p {
+    margin: 0;
+    padding: 20px;
+    font-family: Raleway;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+
+/*------- end CSS for footer-------*/
 
 
 @media screen and (min-width:768px) {
     .brand {
         display: inherit;
-        margin: ;
         padding: 10px;
         text-align: center;
         text-shadow: 1px 1px 1px black;
         font-family: "Tangerine", cursive;
-        font-size: 5em;
+        font-size: 90px;
         font-weight: 700;
         line-height: normal;
         color: #FFFFF0;
@@ -260,7 +339,7 @@ footer p {
         text-align: center;
         text-shadow: 1px 1px 1px black;
         text-transform: uppercase;
-        font-size: 1.1em;
+        font-size: 20px;
         font-weight: 600;
         letter-spacing: 2px;
         color: #FFFFF0;
@@ -277,6 +356,7 @@ footer p {
     .navbar-default {
         border: none;
         background: rgba(123, 158, 168, 0.9);
+        margin-bottom: 45px;
     }
 
     .nav>li>a {
@@ -288,6 +368,7 @@ footer p {
     .navbar-nav>li>a {
         line-height: normal;
         color: #FFFFF0;
+        font-size: 20px;
     }
 
     .navbar-nav {
@@ -303,7 +384,7 @@ footer p {
 	}
 
 	hr {
-		max-width: 350px;
+		max-width: 150px;
 	}
 
 	.card {
@@ -321,10 +402,29 @@ footer p {
 		width: 100%;
 	}
 
-	.container {
-		margin: 20;
-		width: 100%;
+	.box {
+		margin: 0 auto;
+		text-align: center;
 	}
+
+/*	.container-fluid {
+		margin: 0 auto;
+		width: 100%;
+		text-align: center;
+
+	}*/
+
+	#footer {
+	  height: 200px;
+
+	}
+
+	#vendorslist {
+		padding-left: 200px;
+		padding-right: 200px;
+	}
+
+
 }
 
 /*@media screen and (min-width:992px) {
