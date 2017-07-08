@@ -1,10 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
 
 	background: url("lib/images/background.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 	font-family: 'Raleway', sans-serif;
 	position: relative;
 }
@@ -82,22 +86,30 @@ a {
 
 }
 
-/*.navbar-collapse {
-	margin-bottom: 15px;
-}*/
-
-
-
 .navbar-default {
-        background: rgba(123, 158, 168, 0.9);
+        background: rgb(123, 158, 168);
 }
 
 /*--------end navbar CSS---------*/
 
 
+/*------- homepage CSS -------*/
+
+#myCarousel >img {
+  width: 100%;
+  height: 225px;
+  max-height: 225px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.carousel {
+    -webkit-box-shadow:  1px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.75);
+    padding: 0px;
+}
 
 
-/*------- cards CSS -------*/
 
 #cards {
 	margin-left: 0px;
@@ -110,14 +122,9 @@ a {
 	text-align: center;
 	background-color: rgba(255, 255, 255, 0.8);
 	margin: 0px 0px 20px 0px;
-/*	margin-left: 0px;
-	margin-right: 0px;
-	margin-bottom: 20px;*/
+	margin-top: 20px;
 	width: 100%;
 	border-radius: 20px 20px 0px 0px;
-/*    -webkit-box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.75);
-    box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.75);*/
 }
 
 
@@ -149,92 +156,11 @@ hr {
 
 }
 
-/*------- end CSS for cards-------*/
-
-
-
-/*------- CSS for swiper-------*/
-	.swiper-container {
-        width: 80%;
-
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .swiper-slide {
-        background-size: cover;
-        background-position: center;
-    }
-    .gallery-top {
-        height: 80%;
-        width: 100%;
-    }
-    .gallery-thumbs {
-        height: 20%;
-        box-sizing: border-box;
-        padding: 10px 0;
-    }
-    .gallery-thumbs .swiper-slide {
-        width: 25%;
-        height: 100%;
-        opacity: 0.4;
-    }
-    .gallery-thumbs .swiper-slide-active {
-        opacity: 1;
-    }
-/*------- end CSS for swiper-------*/
-
+/*------- end homepage CSS-------*/
 
 
 /*------- accordion list CSS-------*/
-/*.accordion {
-	background: linear-gradient(to bottom right, white, #F8F8F8);
-	max-width: 400px;
-	background: white;
-	margin: 0 auto;
-  box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
-}
 
-.accordion-header {
-	border-bottom: 1px solid #DDE0E7;
-	color: #2a313a;
-	cursor: pointer;
-	font-weight: 700;
-	padding: 1.5rem;
-}
-
-.accordion-header:hover {
-	background: #F6F7F9;
-}
-
-.accordion-content {
-	display: none;
-	border-bottom: 1px solid #DDE0E7;
-	background: #F6F7F9;
-	padding: 1.5rem;
-	color: #4a5666;
-}
-
-.accordion-header::before {
-	content: '';
-	vertical-align: middle;
-	display: inline-block;
-	width: .75rem;
-	height: .75rem;
-	border-radius: 50%;
-	background-color: #B1B5BE;
-	margin-right: .75rem;
-}
-
-.active.accordion-header::before {
-	background-color: #FC6468;
-}*/
-
-
-/*#accordion p {
-	display: none;
-}*/
-
-/* Style the buttons that are used to open and close the accordion panel */
 #vendorslist {
 	padding: 20px;
 }
@@ -247,7 +173,6 @@ hr {
 	position: relative;
 	background-color: #eee;
 }
-
 
 button.accordion {
     background-color: #eee;
@@ -266,12 +191,10 @@ button.accordion {
 	float: left;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 button.accordion.active, button.accordion:hover {
     background-color: #ddd;
 }
 
-/* Style the accordion panel. Note: hidden by default */
 div.panel {
     padding: 0 18px;
     background-color: white;
@@ -283,15 +206,10 @@ div.panel {
 	vertical-align: middle;
 }
 
-
-
-button.accordion.active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-}
-
 /*------- end accordion list CSS-------*/
 
-/*------- CSS for contacts page-------*/
+
+/*------- contacts page CSS -------*/
 #map {
 	height:300px;
 	width: 100%;
@@ -301,6 +219,9 @@ button.accordion.active:after {
 }
 
 .box {
+	margin: 10px;
+	padding: 10px;
+	width: 90%;
 	background-color: rgba(255, 255, 255, 0.8);
 	-webkit-box-shadow:  1px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.75);
@@ -318,23 +239,14 @@ label, input {
 
 }
 
+/*------- end contacts page CSS -------*/
 
+/*------- footer CSS -------*/
 
-/*label {
-	width: 30%;
-	text-align: right;
-} */
-
-
-
-/*------- end CSS for contacts page-------*/
-
-/*------- CSS for footer-------*/
 #footer {
   background-color: rgba(255, 255, 255, 0.8);
   height: 360px;
   width: 100%;
-/*  position: absolute;*/
   bottom: 0;
   text-align: center;
 }
@@ -344,85 +256,95 @@ footer p {
     padding: 10px;
     font-family: Raleway;
 }
-
 .fa {
     padding: 20px;
     font-size: 30px;
-    width: 40px;
+    width: 50px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
+    margin: 15px 5px;
 }
 
+.fa:hover {
+    opacity: 0.7;
+}
 
-/*------- end CSS for footer-------*/
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
 
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
 
-
+/*------- end footer CSS -------*/
 
 @media screen and (min-width:768px) {
-    .brand {
-        display: inherit;
-        padding: 10px;
-        text-align: center;
-        text-shadow: 1px 1px 1px black;
-        font-family: "Tangerine", cursive;
-        font-size: 90px;
-        font-weight: 700;
-        line-height: normal;
-        color: #FFFFF0;
-    }
+  .brand {
+      display: inherit;
+      padding: 10px;
+      text-align: center;
+      text-shadow: 1px 1px 1px black;
+      font-family: "Tangerine", cursive;
+      font-size: 90px;
+      font-weight: 700;
+      line-height: normal;
+      color: #FFFFF0;
+  }
 
-    .address-bar {
-        display: inherit;
-        margin: 0;
-        padding: 0 0 40px;
-        text-align: center;
-        text-shadow: 1px 1px 1px black;
-        text-transform: uppercase;
-        font-size: 20px;
-        font-weight: 600;
-        letter-spacing: 2px;
-        color: #FFFFF0;
-    }
+  .address-bar {
+      display: inherit;
+      margin: 0;
+      padding: 0 0 40px;
+      text-align: center;
+      text-shadow: 1px 1px 1px black;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      color: #FFFFF0;
+  }
 
-    .navbar {
-        border-radius: 0;
-    }
+  .navbar {
+      border-radius: 0;
+  }
 
-    .navbar-header {
-        display: none;
-    }
+  .navbar-header {
+      display: none;
+  }
 
-    .navbar-default {
-        border: none;
-        background: rgba(123, 158, 168, 0.9);
-        margin-bottom: 45px;
-    }
+  .navbar-default {
+      border: none;
+      background: rgb(123, 158, 168);
+      margin-bottom: 45px;
+  }
 
-    .nav>li>a {
-        padding: 25px;
+  .nav>li>a {
+      padding: 25px;
 
-    }
+  }
 
-    .navbar-default
-    .navbar-nav>li>a {
-        line-height: normal;
-        color: #FFFFF0;
-        font-size: 40px;
-    }
+  .navbar-default
+  .navbar-nav>li>a {
+      line-height: normal;
+      color: #FFFFF0;
+      font-size: 40px;
+  }
 
-    .navbar-nav {
-        display: table;
-        float: none;
-        margin: 0 auto;
-        table-layout: fixed;
-        font-size: 1.25em;
-    }
+  .navbar-nav {
+      display: table;
+      float: none;
+      margin: 0 auto;
+      table-layout: fixed;
+      font-size: 1.25em;
+  }
 
-    p {
-		font-size: 14px;
-	}
+  p {
+	font-size: 14px;
+  }
 
 	hr {
 		max-width: 150px;
@@ -445,15 +367,9 @@ footer p {
 
 	.box {
 		margin: 20px;
+		padding: 10px;
 		text-align: center;
 	}
-
-/*	.container-fluid {
-		margin: 0 auto;
-		width: 100%;
-		text-align: center;
-
-	}*/
 
 	#footer {
 	  height: 200px;
@@ -465,25 +381,14 @@ footer p {
 		padding-right: 200px;
 	}
 
-
+.column {
+  width: 25%;
 }
 
-/*@media screen and (min-width:992px) {
-	.navbar-nav>li>a {
-		font-size: 20px;
-		padding: 35px 45px;
-	}
+.panel {
+  background-color: white;
 
-	.card {
-		width: 46%;
-		padding-top: 20px;
-		margin-left: 20px;
-		margin-right: 20px;
-	}
-
-	.row {
-		text-align: center;
-	}
-}*/
+}
+}
 
 
