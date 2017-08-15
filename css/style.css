@@ -1,15 +1,13 @@
 * {
-  box-sizing: border
+  box-sizing: border;
 }
 
 body {
- 
+    background-color: #fffff0;
     font-family: 'Great Vibes', sans-serif;
     position: relative;
     color: white;
 }
-
-
 
 body, html {
 	height: 100%;
@@ -28,10 +26,10 @@ h6 {
     text-align: center;
 }
 
-
 p {
 	font-size: 12px;
-	text-align: center;
+    text-align: center;
+    color: black;
 }
 
 a {
@@ -39,8 +37,15 @@ a {
 	color: black;
 }
 
-#content {
-    padding-top: 50px;
+hr.style14 { 
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 0; 
+    height: 2px; 
+    background-image: -webkit-linear-gradient(left, #f0f0f0, black, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, black, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, black, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, black, #f0f0f0); 
 }
 
 
@@ -64,22 +69,15 @@ a {
 }
 
 
-
-/*-------------------navbar CSS-------------------*/
-
-/* .brand,
-.address-bar {
-	display: none;
-} */
+/*-------------------navbar & header CSS-------------------*/
 
 .navbar {
     width: 100%
 } 
 
 .navbar-default {
-    background-color:rgb(123, 158, 168);
+    background-color:rgb(199, 151, 173);
 }
-
 
 .navbar .navbar-brand {
 	font-family: 'Great Vibes', cursive;
@@ -109,7 +107,7 @@ a {
 
 .navbar .navbar-nav>li>a {
 	font-size: 20px;
-  /* text-transform: uppercase; */
+    text-transform: uppercase; 
     cursor: pointer;
 	font-family: Raleway;
 	text-align: center;
@@ -126,102 +124,117 @@ a {
 
 }
 
-  .header {
-        padding-top: 150px;
-        padding-bottom: 120px;
-        box-shadow: 0 2px 3px black;
-  }
+.header {
+    padding-top: 150px;
+    padding-bottom: 120px;
+    box-shadow: 0 2px 3px black;
+}
 
-  .header1 {
-        background: url("insidechapel5.jpg") no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover; 
+.header1 {
+    background: url("insidechapel5.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
 
-  }
+}
 
-  .header2 {
-        background: url("barn3.jpg") no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover; 
-        padding-top: 200px;
-        padding-bottom: 200px;
-  }
+.header2 {
+    background: url("barn3.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 
-  .header3 {
-        background: url("chapel3.jpg") no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover; 
-        padding-top: 200px;
-        padding-bottom: 200px;
-  }
+.header3 {
+    background: url("chapel3.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 
-  .header4 {
-        background: url("garden13.jpg") no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover; 
-        padding-top: 200px;
-        padding-bottom: 200px;
-  }
+.header4 {
+    background: url("garden13.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 
-  .header5 {
-        background: url("marquee3.jpg") no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover; 
-        padding-top: 200px;
-        padding-bottom: 200px;
-  }
+.header5 {
+    background: url("marquee3.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 
-  .header6 {
-        background: url("background.jpg") no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover; 
-        padding-top: 200px;
-        padding-bottom: 200px;
-  }
+.header6 {
+    background: url("background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 
-  .brand {
-      display: inherit;
-      padding: 10px;
-      text-align: center;
-      text-shadow: 1px 1px 1px black;
-      font-family: 'Great Vibes', cursive;
-      font-size: 70px;
-      font-weight: 700;
-      line-height: normal;
-      color: #FFFFF0;
-  }
+.brand {
+    display: inherit;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFFFF0;
+}
 
-  .address-bar {
-      display: inherit;
-      margin: 0;
-      padding: 0 0 40px;
-      text-align: center;
-      text-shadow: 1px 1px 1px black;
-      text-transform: uppercase;
-      font-size: 15px;
-      font-weight: 600;
-      letter-spacing: 2px;
-      color: #FFFFF0;
-  }
+.address-bar {
+    display: inherit;
+    margin: 0;
+    padding: 0 0 40px;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #FFFFF0;
+}
 
-
-
-/*--------end navbar CSS---------*/
-
+/*-----------------------------------------*/
 
 /*------- homepage CSS -------*/
+
+.intro {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.intro > p {
+    font-size: 20px;
+}
+
+.imagesacross {
+    text-align: center;
+    width: 100%;
+}
+
+ .imagesacross > img {
+    margin: 10px;
+} 
 
 #myCarousel >img {
   width: 100%;
@@ -236,7 +249,6 @@ a {
     box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.75);
     padding: 0px;
 }
-
 
 
 #cards {
@@ -266,17 +278,6 @@ a {
     box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.75);
 }
 
-hr {
-	max-width: 200px;
-	margin-top: 10px;
-	margin-bottom: 5px;
-    color: gray;
-	height: 0.5px;
-}
-
-.hrtop {
-    max-width: 400px;
-}
 
 .card_title{
 	margin-top: 0px;
@@ -421,7 +422,7 @@ footer p {
 
   .navbar {
       border: none;
-      background: rgb(123, 158, 168);
+      background: rgba(199, 151, 173, 0.9);
       margin-bottom: 45px;
   }
 
@@ -451,7 +452,6 @@ footer p {
 
   .address-bar {
       font-size: 20px;
-
   }
 
 
@@ -459,9 +459,23 @@ footer p {
 	font-size: 14px;
   }
 
-	hr {
-		max-width: 150px;
-	}
+.intro {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.intro > p {
+    font-size: 30px;
+}
+
+.imagesacross {
+    margin-bottom: 20px;
+}
+
+ .imagesacross > img {
+    margin: 0;
+} 
+
 
 	.card {
 		width: 24%;
