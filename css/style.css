@@ -3,15 +3,13 @@
 }
 
 body {
-    background: url("background.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;  
+ 
     font-family: 'Great Vibes', sans-serif;
     position: relative;
     color: white;
 }
+
+
 
 body, html {
 	height: 100%;
@@ -69,10 +67,10 @@ a {
 
 /*-------------------navbar CSS-------------------*/
 
-.brand,
+/* .brand,
 .address-bar {
 	display: none;
-}
+} */
 
 .navbar {
     width: 100%
@@ -127,6 +125,96 @@ a {
 	color: #FFFFF0;
 
 }
+
+  .header {
+        padding-top: 150px;
+        padding-bottom: 120px;
+        box-shadow: 0 2px 3px black;
+  }
+
+  .header1 {
+        background: url("insidechapel5.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover; 
+
+  }
+
+  .header2 {
+        background: url("barn3.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover; 
+        padding-top: 200px;
+        padding-bottom: 200px;
+  }
+
+  .header3 {
+        background: url("chapel3.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover; 
+        padding-top: 200px;
+        padding-bottom: 200px;
+  }
+
+  .header4 {
+        background: url("garden13.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover; 
+        padding-top: 200px;
+        padding-bottom: 200px;
+  }
+
+  .header5 {
+        background: url("marquee3.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover; 
+        padding-top: 200px;
+        padding-bottom: 200px;
+  }
+
+  .header6 {
+        background: url("background.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover; 
+        padding-top: 200px;
+        padding-bottom: 200px;
+  }
+
+  .brand {
+      display: inherit;
+      padding: 10px;
+      text-align: center;
+      text-shadow: 1px 1px 1px black;
+      font-family: 'Great Vibes', cursive;
+      font-size: 70px;
+      font-weight: 700;
+      line-height: normal;
+      color: #FFFFF0;
+  }
+
+  .address-bar {
+      display: inherit;
+      margin: 0;
+      padding: 0 0 40px;
+      text-align: center;
+      text-shadow: 1px 1px 1px black;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      color: #FFFFF0;
+  }
 
 
 
@@ -327,13 +415,13 @@ footer p {
 
 @media screen and (min-width:768px) {
 
-  .navbar-header {
+   .navbar-header {
       display: none;
-  }
+  } 
 
   .navbar {
       border: none;
-      background: rgba(123, 158, 168, 0.9);
+      background: rgb(123, 158, 168);
       margin-bottom: 45px;
   }
 
@@ -357,34 +445,15 @@ footer p {
       font-size: 1.25em;
   }
 
-  .header {
-      padding-top: 100px;
-  }
-
-  .brand {
-      display: inherit;
-      padding: 10px;
-      text-align: center;
-      text-shadow: 1px 1px 1px black;
-      font-family: 'Great Vibes', cursive;
+    .brand {
       font-size: 90px;
-      font-weight: 700;
-      line-height: normal;
-      color: #FFFFF0;
   }
 
   .address-bar {
-      display: inherit;
-      margin: 0;
-      padding: 0 0 40px;
-      text-align: center;
-      text-shadow: 1px 1px 1px black;
-      text-transform: uppercase;
       font-size: 20px;
-      font-weight: 600;
-      letter-spacing: 2px;
-      color: #FFFFF0;
+
   }
+
 
   p {
 	font-size: 14px;
