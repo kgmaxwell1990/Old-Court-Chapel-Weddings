@@ -1,16 +1,16 @@
 * {
-  box-sizing: border-box;
+  box-sizing: border
 }
 
 body {
-
-	background: url("lib/images/background.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-	font-family: 'Raleway', sans-serif;
-	position: relative;
+    background: url("background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;  
+    font-family: 'Great Vibes', sans-serif;
+    position: relative;
+    color: white;
 }
 
 body, html {
@@ -41,23 +41,57 @@ a {
 	color: black;
 }
 
-/*--------navbar CSS---------*/
+#content {
+    padding-top: 50px;
+}
+
+
+/*---------------------- hover.css -----------------*/
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.7s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+
+/*-------------------navbar CSS-------------------*/
 
 .brand,
 .address-bar {
 	display: none;
 }
 
+.navbar {
+    width: 100%
+} 
 
-.navbar-default .navbar-brand {
-	font-family: 'Tangerine', cursive;
+.navbar-default {
+    background-color:rgb(123, 158, 168);
+}
+
+
+.navbar .navbar-brand {
+	font-family: 'Great Vibes', cursive;
 	color: #FFFFF0;
 	text-shadow: 1px 1px 1px black;
 	text-transform: none;
-	font-size: 2em;
+	font-size: 1.3em;
 }
 
-.navbar-default .navbar-toggle {
+.navbar .navbar-toggle {
 	border-color: #FFFFF0;
 	background-color: #FFFFF0;
 }
@@ -69,16 +103,24 @@ a {
 	text-shadow: 1px 1px 1px black;
 }
 
-.navbar-default .navbar-nav>li>a {
-	font-size: 25px;
-	font-family: Tangerine;
+.navbar {
+     position: fixed;
+     top:0;
+     z-index: 150;
+}
+
+.navbar .navbar-nav>li>a {
+	font-size: 20px;
+  /* text-transform: uppercase; */
+    cursor: pointer;
+	font-family: Raleway;
 	text-align: center;
 	color: #FFFFF0;
 	text-shadow: 1px 1px 1px black;
 	
 }
 
-.navbar-default .navbar-nav>li>a:hover {
+.navbar .navbar-nav>li>a:hover {
 	transform: scale(1.15, 1.15);
 	transition: scale 4000 ease;
 	text-shadow: 2px 2px 2px black;
@@ -86,9 +128,7 @@ a {
 
 }
 
-.navbar-default {
-        background: rgb(123, 158, 168);
-}
+
 
 /*--------end navbar CSS---------*/
 
@@ -142,9 +182,12 @@ hr {
 	max-width: 200px;
 	margin-top: 10px;
 	margin-bottom: 5px;
-	color: gray;
-	background-color: gray;
+    color: gray;
 	height: 0.5px;
+}
+
+.hrtop {
+    max-width: 400px;
 }
 
 .card_title{
@@ -283,12 +326,47 @@ footer p {
 /*------- end footer CSS -------*/
 
 @media screen and (min-width:768px) {
+
+  .navbar-header {
+      display: none;
+  }
+
+  .navbar {
+      border: none;
+      background: rgba(123, 158, 168, 0.9);
+      margin-bottom: 45px;
+  }
+
+  .nav>li>a {
+      padding: 25px;
+
+  }
+
+  .navbar
+  .navbar-nav>li>a {
+      line-height: normal;
+      color: #FFFFF0;
+      font-size: 17px;
+  }
+
+  .navbar-nav {
+      display: table;
+      float: none;
+      margin: 0 auto;
+      table-layout: fixed;
+      font-size: 1.25em;
+  }
+
+  .header {
+      padding-top: 100px;
+  }
+
   .brand {
       display: inherit;
       padding: 10px;
       text-align: center;
       text-shadow: 1px 1px 1px black;
-      font-family: "Tangerine", cursive;
+      font-family: 'Great Vibes', cursive;
       font-size: 90px;
       font-weight: 700;
       line-height: normal;
@@ -306,40 +384,6 @@ footer p {
       font-weight: 600;
       letter-spacing: 2px;
       color: #FFFFF0;
-  }
-
-  .navbar {
-      border-radius: 0;
-  }
-
-  .navbar-header {
-      display: none;
-  }
-
-  .navbar-default {
-      border: none;
-      background: rgb(123, 158, 168);
-      margin-bottom: 45px;
-  }
-
-  .nav>li>a {
-      padding: 25px;
-
-  }
-
-  .navbar-default
-  .navbar-nav>li>a {
-      line-height: normal;
-      color: #FFFFF0;
-      font-size: 40px;
-  }
-
-  .navbar-nav {
-      display: table;
-      float: none;
-      margin: 0 auto;
-      table-layout: fixed;
-      font-size: 1.25em;
   }
 
   p {

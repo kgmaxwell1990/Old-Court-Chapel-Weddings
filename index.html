@@ -8,13 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!--reset link-->
-	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="lib/reset.css">
 
   <!--link to bootstrap -->
-	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/bootstrap.css">
 
   <!--link to css-->
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<!--Custom fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Raleway|Tangerine|Lato|Philosopher|Great+Vibes" rel="stylesheet">
@@ -22,18 +22,15 @@
   <!--Font awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
 
  <!--heading & navbar-->
-  <div>
-    <div class="brand">Old Court Chapel <br> Weddings</div>
-    <div class="address-bar">Strangford | County Down</div>
-  </div>
-
   <nav class="navbar navbar-default" role="navigation">
-    <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -46,105 +43,107 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="booking_info.html">Booking &amp; Info</a></li>
-                <li><a href="vendors.html">Vendors</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="index.html" class="hvr-grow">Home</a></li>
+                <li><a href="gallery.html" class="hvr-grow">Gallery</a></li>
+                <li><a href="booking_info.html" class="hvr-grow">Booking &amp; Info</a></li>
+                <li><a href="vendors.html" class="hvr-grow">Vendors</a></li>
+                <li><a href="contact.html" class="hvr-grow">Contact Us</a></li>
+                <li><a href="faqs.html" class="hvr-grow">FAQs</a></li>
             </ul>
-<!--             <ul class="nav navbar-right">
-              <li> Book a Viewing </li>
 
-            </ul> -->
+
         </div>
-    </div>
   </nav>
+
+  <div class="header">
+    <div class="brand">Old Court Chapel <br> Weddings</div>
+    <div class="address-bar">Strangford | County Down | NI</div>
+    <hr class="hrtop">
+  </div>
+
  <!--heading & navbar-->
 
- <!--carousel-->
+<div id="content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 carousel">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Carousel indicators -->
+              <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                  <li data-target="#myCarousel" data-slide-to="4"></li>
+              </ol>   
+              <!-- Wrapper for carousel items -->
+              <div class="carousel-inner">
+                  <div class="item active">
+                      <img src="images/barn3.jpg" alt="First Slide" width="950px">
+                  </div>
+                  <div class="item">
+                      <img src="images/chapel7.jpg" alt="Second Slide" width="950px">
+                  </div>
+                  <div class="item">
+                      <img src="images/garden19.jpg" alt="Third Slide" width="950px">
+                  </div>
+                  <div class="item">
+                      <img src="images/insidechapel5.jpg" alt="Third Slide" width="950px">
+                  </div>
 
- 
-<div class="carousel col-sm-8 col-sm-offset-2">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Carousel indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-            <li data-target="#myCarousel" data-slide-to="4"></li>
-        </ol>   
-        <!-- Wrapper for carousel items -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="lib/images/barn3.jpg" alt="First Slide" width="950px">
-            </div>
-            <div class="item">
-                <img src="lib/images/chapel7.jpg" alt="Second Slide" width="950px">
-            </div>
-            <div class="item">
-                <img src="lib/images/garden19.jpg" alt="Third Slide" width="950px">
-            </div>
-            <div class="item">
-                <img src="lib/images/insidechapel5.jpg" alt="Third Slide" width="950px">
-            </div>
-
-        </div>
-        <!-- Carousel controls -->
-        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="carousel-control right" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
+              </div>
+              <!-- Carousel controls -->
+              <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+          </div>
+      </div>
     </div>
-</div>
-
- <!--cards-->
- <div class="container-fluid">
-<!--   <div class="row">
-    <div class="col-lg-offset-2 col-lg-8 box">
-      <h1>About</h1>
-      <p>Old Court is a unique location for your wedding and reception.  Set on the shores of Strangford Lough in a private estate with a 17th century Chapel, restored stables, a yurt-inspired marquee and several acres of natural gardens along the shore. The opportunities for fabulous photos are quite breathtaking.  As we only have one wedding per week, the venue will be exclusively yours, with the opportunity to customise the space prior to the big day, if you so wish, so that you can feel completely relaxed, with everything as you would like it, ready to enjoy a memorable day and evening.</p>
-    </div>
-  </div> -->
-
-  <div class="row justify-content-center" id="cards">
-
-    <a href="gallery.html"><div class= "col-xs-12 col-md-6 col-lg-3 card">
-      <img src="lib/images/marquee3.jpg" width="100px" />
-      <hr>
-        <h2 class="card_title">Gallery</h2>
-    </div></a>
-
-    <a href="booking_info.html"><div class="col-xs-12 col-md-6 col-lg-3 card">
-      <img src="lib/images/boathouse5.jpg" width="100px" />
-      <hr>
-        <h2 class="card_title">Booking &amp; Info</h2>
-    </div></a>
-
-    <a href="vendors.html"><div class="col-xs-12 col-md-6 col-lg-3 card">
-      <img src="lib/images/boathouse3.jpg" width="100px" />
-      <hr>
-        <h2 class="card_title">Vendors</h2>
-    </div></a>
     
-    <a href="contact.html"><div class= "col-xs-12 col-md-6 col-lg-3 card">
-      <img src="lib/images/garden13.jpg" width="100px" />
-      <hr>
-        <h2 class="card_title">Contact Us</h2>
-    </div></a>
+    <div class="row">
+      <div class="col-sm-12">
+        <p>Old Court is a unique location for your wedding and reception.  Set on the shores of Strangford Lough in a private estate with a 17th century Chapel, restored stables, a yurt-inspired marquee and several acres of natural gardens along the shore. The opportunities for fabulous photos are quite breathtaking.  As we only have one wedding per week, the venue will be exclusively yours, with the opportunity to customise the space prior to the big day, if you so wish, so that you can feel completely relaxed, with everything as you would like it, ready to enjoy a memorable day and evening.</p>
+      </div>
+    </div> 
 
-</div>
+    <div class="row justify-content-center" id="cards">
+      <div class= "col-lg-3 col-md-6 col-sm-12 card">
+        <a href="gallery.html">
+          <img src="images/marquee3.jpg" width="100px" />
+          <hr>
+            <h2 class="card_title">Gallery</h2>
+        </a>
+      </div>
 
-<!--cards-->
+      <div class= "col-lg-3 col-md-6 col-sm-12 card">
+        <a href="booking_info.html">
+          <img src="images/boathouse5.jpg" width="100px" />
+          <hr>
+            <h2 class="card_title">Booking &amp; Info</h2>
+        </a>
+      </div>
 
+      <div class= "col-lg-3 col-md-6 col-sm-12 card">
+        <a href="vendors.html">
+          <img src="images/boathouse3.jpg" width="100px" />
+          <hr>
+            <h2 class="card_title">Vendors</h2>
+        </a>
+      </div>
+      
+      <div class= "col-lg-3 col-md-6 col-sm-12 card">
+        <a href="contact.html">
+          <img src="images/garden13.jpg" width="100px" />
+          <hr>
+            <h2 class="card_title">Contact Us</h2>
+        </a>
+      </div>
+    </div>
+  </div>
 
-
-
-
-
-</div>
 
   <footer id="footer">
       <div class="col-sm-4"> 
@@ -161,11 +160,15 @@
     </div>
 
   </footer>
+    
+
 
 <!--links to javascript and jquery-->
-  <script type="text/javascript" src="lib/jQuery/jquery-3.2.1.js"></script>
-	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.js"></script>
-  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="lib/js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="lib/js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+
 
 </body>
 
