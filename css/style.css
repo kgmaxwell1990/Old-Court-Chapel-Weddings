@@ -83,11 +83,13 @@ hr.longer {
   transition-duration: 0.7s;
   -webkit-transition-property: transform;
   transition-property: transform;
+
 }
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
 
 
 
@@ -405,9 +407,26 @@ fieldset {
 
 label, input {
 	display: block;
-	width: 100%;
+    width: 100%;
+    color: BLACK;
 
 }
+
+.btn-primary {
+    background-color:gray;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: rgb(199, 151, 173);
+    color: black;
+}
+
+.form-group {
+    text-align: center;
+}
+
+
 
 /*------- end contacts page CSS -------*/
 

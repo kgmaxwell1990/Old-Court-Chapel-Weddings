@@ -1,10 +1,9 @@
  $(document).ready(function () {
 
+
   $(".box").hide(0).fadeIn(3000);
   $(".card").hide(0).fadeIn(3000);
 
-
-  $("#carousel").carousel();
 
 
   var acc = document.getElementsByClassName("accordion");
@@ -24,17 +23,6 @@
       }
   }
 
-        var  mn = $("#main-nav");
-            mns = "main-nav-scrolled";
-            hdr = $('header').height();
-
-        $(window).scroll(function() {
-          if( $(this).scrollTop() > hdr ) {
-            mn.addClass(mns);
-          } else {
-            mn.removeClass(mns);
-          }
-        });
 
 });
 
