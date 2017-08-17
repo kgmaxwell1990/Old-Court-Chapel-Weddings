@@ -1,11 +1,9 @@
  $(document).ready(function () {
 
-
-  $(".box").hide(0).fadeIn(3000);
   $(".card").hide(0).fadeIn(3000);
 
 
-
+  
   var acc = document.getElementsByClassName("accordion");
   var i;
 
