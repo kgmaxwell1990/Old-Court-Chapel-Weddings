@@ -34,7 +34,8 @@ p {
 
 a {
 	text-decoration: none;
-	color: black;
+    color: grey;
+    
 }
 
 .raleway {
@@ -290,8 +291,13 @@ hr.longer {
     margin-right: 10px;
 }
 
+.imagegallery > h1 {
+    font-size: 20px;
+}
+
 .imagegallery > a > img {
     margin-bottom: 5px;
+    border-radius: 10px;
 }
 
 
@@ -333,7 +339,6 @@ button.accordion.active, button.accordion:hover {
 
 div.panel {
     padding: 0 18px;
-    background-color: white;
     display: none;
 }
 
@@ -375,9 +380,6 @@ button.accordion.active:after {
 
 div.panel {
     padding: 0 18px;
-    background-color: white;
-    transition: max-height 0.2s ease-out;
-
 }
 
 /*------- end accordion list CSS-------*/
@@ -535,6 +537,15 @@ margin: 0;
 
 /*------------------------*/
 
+/*------- gallery CSS-------*/
+
+
+.imagegallery > h1 {
+    font-size: 30px;
+}
+
+/*--------------*/
+
 .main {
     margin: 0;
 }
@@ -564,8 +575,8 @@ width: 25%;
 }
 
 .panel {
-background-color: white;
-
+    background-color: transparent;
+    border: none;
 }
 
 #footer {
