@@ -29,38 +29,37 @@
 
 <body>
 
- <!--heading & navbar-->
-  <nav class="navbar navbar-default" role="navigation">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">Old Court Chapel Weddings</a>
-        </div>
+<nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Old Court Chapel Weddings</a>
+      </div>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="index.html" class="hvr-grow">Home</a></li>
-                <li><a href="gallery.html" class="hvr-grow">Gallery</a></li>
-                <li><a href="booking_info.html" class="hvr-grow">Booking &amp; Info</a></li>
-                <li><a href="vendors.html" class="hvr-grow">Vendors</a></li>
-                <li><a href="contact.html" class="hvr-grow">Contact Us</a></li>
-            </ul>
-
-
-        </div>
-  </nav>
-
-   <div class="header header5">
-    <div class="brand">Contact Us</div>
-  </div> 
-    <hr class="style14">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+              <li><a href="index.html" class="hvr-grow">Home</a></li>
+              <li><a href="gallery.html" class="hvr-grow">Gallery</a></li>
+              <li><a href="booking_info.html" class="hvr-grow">Booking &amp; Info</a></li>
+              <li><a href="vendors.html" class="hvr-grow">Vendors</a></li>
+              <li><a href="contact.html" class="hvr-grow">Contact Us</a></li>
+          </ul>
 
 
-<div class="container-fluid">
+      </div>
+</nav>
+
+<div class="header header5">
+  <div class="brand">Contact Us</div>
+</div> 
+    
+<hr class="style14">
+
+<div class="container-fluid titles">
     <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">V</span>iewings are by <span class="greatvibes caps pink gallerycaps">A</span>ppointment Only</h1>
     <div class="row nolrmargin">
         <div class="col-sm-12">
@@ -68,7 +67,7 @@
         </div>
       </div>
   <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="col-lg-6 col-md-6 col-sm-12 titles">
       <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">C</span>ontact Form</h1>
       <p> * Required Fields </p>
       <form action="contact.html" onsubmit="myFunction()">
@@ -94,7 +93,7 @@
     </div>
 
 
-    <div class="col-lg-6 col-md-6 col-sm-12 textcentre">
+    <div class="col-lg-6 col-md-6 col-sm-12 textcentre titles">
       <h1 class="raleway"> <span class="greatvibes caps pink gallerycaps">W</span>here We Are </h1>
 
       <h3>Contact via Post</h3><p> Old Court Chapel Weddings </br> 60 Old Court </br> Strangford </br> Co. Down </br> Northern Ireland </br> BT30 7NB </br> </p>
@@ -108,9 +107,6 @@
       <a class="hvr-grow" href="https://twitter.com/oldcourtchapel" target="_blank"><img src="images/Twitter.png" width="35px"/></a>
       <a class="hvr-grow" href="https://www.instagram.com/explore/locations/1000072381/old-court-chapel-weddings/" target="_blank"><img src="images/Instagram.png" width="35px"/></a>
 
-
-
-      
     </div>
   </div>
 
@@ -149,33 +145,10 @@
 <script type="text/javascript" src="lib/js/bootstrap.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 
-
-  <script type="text/javascript">
-    function initMap() {
-      var options = {
-        zoom:8,
-        center:{lat:54.367288,lng:-5.560291}
-      }
-
-      var map = new
-      google.maps.Map(document.getElementById('map'), options);
-
-      var marker = new google.maps.Marker({
-        position:{lat:54.367288,lng:-5.560291},
-        map:map
-      });
-    }
-  </script>
-
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPV01PlDYzI7UEu4u1lxdB97B0Mcg_c_g&callback=initMap">
-  </script>
-
-
-
-
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPV01PlDYzI7UEu4u1lxdB97B0Mcg_c_g&callback=initMap">
+</script>
 
 </body>
-
 
 </html>
