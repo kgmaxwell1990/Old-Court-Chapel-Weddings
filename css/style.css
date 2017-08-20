@@ -284,6 +284,11 @@ hr.longer {
 	font-size: 30px;
 }
 
+video {
+    vertical-align: bottom;
+    border-radius: 10px;
+}
+
 /*------- end homepage CSS-------*/
 /*------- gallery CSS-------*/
 
@@ -299,6 +304,11 @@ hr.longer {
     margin-bottom: 5px;
     border-radius: 10px;
 }
+
+/*------- booking & info CSS-------*/
+
+
+
 
 
 /*------- accordion list CSS-------*/

@@ -24,6 +24,10 @@
 
 });
 
+function myFunction() {
+    alert("Your information was received & we will get back to you as soon as possible!");
+}
+
 
 
 
