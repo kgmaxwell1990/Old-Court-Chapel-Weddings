@@ -1,16 +1,7 @@
-* {
-  box-sizing: border;
-}
-
 body {
     background-color: #fffff0;
     position: relative;
     color: white;
-}
-
-body, html {
-	height: 100%;
-	width: 100%;
 }
 
 h1,
@@ -90,9 +81,6 @@ hr.longer {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-
-
-
 
 /*-------------------navbar & header CSS-------------------*/
 
