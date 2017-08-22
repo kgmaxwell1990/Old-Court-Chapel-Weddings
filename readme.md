@@ -1,6 +1,6 @@
 # Old Court Chapel Weddings
 
-This Web App is the first project for the Code Institute's classroom course. It is a fully responsive static front-end only app built with HTML, CSS & JavaScript - no template was used.
+This Web App is the first project for the Code Institute's classroom bootcamp. It is a fully responsive static front-end only app built with HTML, CSS & JavaScript - no template was used.
 
 ## Live Demo
 
