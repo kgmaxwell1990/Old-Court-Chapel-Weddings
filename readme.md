@@ -6,14 +6,14 @@ View the wireframe_browser.png and wireframe_mobile.png file in the repo above f
 
 ## Live Demo
 
-Follow this link to view deployed version of the web app https://kgmaxwell1990.github.io/Old-Court-Chapel-Weddings
+Follow this link to view deployed version of the web app https://kgmaxwell1990.github.io/old-court-chapel-weddings
 
 ## Installation
 
 Follow the below instructions clone this project
 
 * Click 'Clone or download' dropdown button at the top of this screen
-* Copy link - https://github.com/kgmaxwell1990/Old-Court-Chapel-Weddings.git
+* Copy link - https://github.com/kgmaxwell1990/old-court-chapel-weddings.git
 * In your terminal navigate to folder you want to save the project
 * `$ git clone https://github.com/kgmaxwell1990/old-court-chapel-weddings.git`
 * New folder will contain all files of the project
