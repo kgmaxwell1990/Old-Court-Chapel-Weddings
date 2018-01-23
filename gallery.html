@@ -2,22 +2,18 @@
 <html>
 
 <head>
-
   <meta charset="utf-8">
   <title>Old Court Chapel Weddings</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!--reset link-->
-	<link rel="stylesheet" type="text/css" href="lib/reset.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
 
   <!--link to bootstrap -->
-	<link rel="stylesheet" type="text/css" href="lib/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-  <!--link to css-->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-
-	<!--Custom fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Raleway|Tangerine|Lato|Philosopher|Great+Vibes" rel="stylesheet">
+    <!--Custom fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Tangerine|Lato|Philosopher|Great+Vibes" rel="stylesheet">
 
   <!--Font awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -27,13 +23,53 @@
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
   <!--FancyBox CSS-->
-  <link rel="stylesheet" type="text/css" href="lib/css/jquery.fancybox.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.1/jquery.fancybox.min.css">
 
+  <!--link to css-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
 
-<nav class="navbar navbar-default" role="navigation">
+<div id="thingsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal-title">Staying for a while?</h2>
+            </div>
+            <div class="modal-body">
+                <h3>Pubs &amp; Eateries</h3>
+                <p><a href="http://thelobsterpotstrangford.com/" target="_blank">The Lobster Pot</a>| <a href="http://www.thecuan.com/" target="_blank">The Cuan</a>| <a href="https://www.facebook.com/TheHoleInTheWallStrangford/" target="_blank">The Hole in the Wall</a>| <a href="https://www.facebook.com/theartisancookhouse/" target="_blank">The Artisan Cookhouse</a></p>
+                <a href="https://www.nationaltrust.org.uk/castle-ward" target="_blank"> <h3>Castleward</h3><p>National Trust House &amp; Grounds</p></a>
+                
+                <a href="https://discovernorthernireland.com/Killard-National-Nature-Reserve-P15630/" target="_blank"> <h3>Kilard National Nature reserve</h3></a>
+                <a href="http://www.ardglassgolfclub.com/" target="_blank"> <h3>Ardglass Golf Club</h3></a>
+                
+                <a href="http://www.clearsky-adventure.com/" target="_blank"> <h3>Clearsky Adventure Centre</h3></a>
+                
+                <a href="http://explorisni.com/" target="_blank"> <h3>Exploris Aquarium</h3></a>
+                
+                <a href="http://www.outdoorni.com/providers/608/strangford-sea-safari/" target="_blank"> <h3>Strangford Sea Safari</h3></a>
+                
+                <a href="http://www.virtualvisittours.com/kilclief-castle/" target="_blank"> <h3>Strangford &amp; Kilclief Castle</h3></a>
+                
+                <a href="http://www.downpatrickracecourse.co.uk/" target="_blank"> <h3>Downpatrick Racecourse</h3></a>
+                
+                <a href="https://www.eastcoastseafoods.com/" target="_blank"> <h3>East Coast Seafood</h3></a>
+            </div>
+            
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+</div>
+
+
+<div class="container-fluid">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
               <span class="sr-only">Toggle navigation</span>
@@ -48,114 +84,176 @@
           <ul class="nav navbar-nav">
               <li><a href="index.html" class="hvr-grow">Home</a></li>
               <li><a href="gallery.html" class="hvr-grow">Gallery</a></li>
-              <li><a href="booking_info.html" class="hvr-grow">Booking &amp; Info</a></li>
+              <li><a href="pricing.html" class="hvr-grow">Info</a></li>
               <li><a href="vendors.html" class="hvr-grow">Vendors</a></li>
-              <li><a href="contact.html" class="hvr-grow">Contact Us</a></li>
+              <li><a href="contact.html" class="hvr-grow">Contact</a></li>
           </ul>
       </div>
 </nav>
 
-<div class="header header2">
-  <div class="brand">Gallery</div>
-</div> 
-
-<hr class="style14">
-
-<div class="imagegallery textcentre titles">
-    <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">C</span>hapel</h1>
-    <!-- landscape photos -->
-    <a data-fancybox="gallery" href="images/chapel1.jpg"><img src="images/chapel1.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/insidechapel2.jpg"><img src="images/insidechapel2.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/chapel3.jpg"><img src="images/chapel3.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/chapel4.jpg"><img src="images/chapel4.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/insidechapel5.jpg"><img src="images/insidechapel5.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/chapel6.jpg"><img src="images/chapel6.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/chapel7.jpg"><img src="images/chapel7.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/insidechapel7.jpg"><img src="images/insidechapel7.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/insidechapel8.jpg"><img src="images/insidechapel8.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/chapel9.jpg"><img src="images/chapel9.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/chapel10.jpg"><img src="images/chapel10.jpg" width="300px" height="210px"></a></br>
-    <!-- portrait photos -->
-    <a data-fancybox="gallery" href="images/insidechapel1.jpg"><img src="images/insidechapel1.jpg" width="300px" height="400px"></a>
-    <a data-fancybox="gallery" href="images/insidechapel4.jpg"><img src="images/insidechapel4.jpg" width="300px" height="400px"></a>
-    <a data-fancybox="gallery" href="images/insidechapel6.jpg"><img src="images/insidechapel6.jpg" width="300px" height="400px"></a>
-    <a data-fancybox="gallery" href="images/chapel8.jpg"><img src="images/chapel8.jpg" width="300px" height="400px"></a>
+<div class="row">
+  <div class="header header2" style="background-image: url('images/marquee4-min.jpg')">
+      <div class="brand">Gallery</div>
+  </div> 
+  <div class="header header2mob" style="background-image: url('images/quay1-min-mob.jpg')">
+      <div class="brand">Gallery</div>
+  </div> 
 </div>
 
-<div class=" imagegallery textcentre">
-    <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">R</span>eception</h1>
-    <!-- landscape photos -->
-    <a data-fancybox="gallery" href="images/marquee8.jpg"><img src="images/marquee8.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/barn1.jpg"><img src="images/barn1.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/marquee2.jpg"><img src="images/marquee2.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/marquee7.jpg"><img src="images/marquee7.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/barn2.jpg"><img src="images/barn2.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/marquee3.jpg"><img src="images/marquee3.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/marquee6.jpg"><img src="images/marquee6.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/barn3.jpg"><img src="images/barn3.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/barn4.jpg"><img src="images/barn4.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/barn5.jpg"><img src="images/barn5.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/marquee4.jpg"><img src="images/marquee4.jpg" width="300px" height="210px"></a></br>
-    <!-- portrait photos -->
-    <a data-fancybox="gallery" href="images/marquee5.jpg"><img src="images/marquee5.jpg" width="300px" height="400px"></a>
+    
+    <hr class="style14">
+<div class="gal">
+
+  <div class="gal_menu">
+      <ul>
+          <li><a href="#chapel_section" class="page-scroll">Chapel</a></li>
+          <li><a href="#reception_section" class="page-scroll">Reception</a></li>
+          <li><a href="#garden_section" class="page-scroll">Gardens</a></li>
+      </ul>
+  </div>
+
+  <section id="chapel_section">  
+  <div class="gal_chapel">
+    <div class="imagegallery textcentre titles gal_titles">
+        <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">C</span>hapel</h1>
+        <!-- landscape photos -->
+        <a data-fancybox="gallery" href="images/chapel1-min.jpg"><img src="images/chapel1-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/insidechapel2-min.jpg"><img src="images/insidechapel2-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/chapel3-min.jpg"><img src="images/chapel3-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/chapel4-min.jpg"><img src="images/chapel4-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/insidechapel5-min.jpg"><img src="images/insidechapel5-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/chapel6-min.jpg"><img src="images/chapel6-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/chapel7-min.jpg"><img src="images/chapel7-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/insidechapel8-min.jpg"><img src="images/insidechapel8-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/chapel9-min.jpg"><img src="images/chapel9-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/chapel10-min.jpg"><img src="images/chapel10-min.jpg" width="300px" height="210px"></a></br>
+        <!-- portrait photos -->
+        <a data-fancybox="gallery" href="images/insidechapel6-min.jpg"><img src="images/insidechapel6-min.jpg" width="300px" height="400px"></a>
+        <a data-fancybox="gallery" href="images/chapel8-min.jpg"><img src="images/chapel8-min.jpg" width="300px" height="400px"></a>
+    </div>
+  </div>
+  </section>
+  
+  <section id="reception_section">
+  <div class="gal_reception">
+    <div class=" imagegallery textcentre titles gal_titles">
+        <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">R</span>eception</h1>
+        <!-- landscape photos -->
+        <a data-fancybox="gallery" href="images/marquee8-min.jpg"><img src="images/marquee8-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/barn8-min.jpg"><img src="images/barn8-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/barn1-min.jpg"><img src="images/barn1-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/marquee2-min.jpg"><img src="images/marquee2-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/barn7-min.jpg"><img src="images/barn7-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/marquee9-min.jpg"><img src="images/marquee9-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/barn2-min.jpg"><img src="images/barn2-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/barn6-min.jpg"><img src="images/barn6-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/marquee3-min.jpg"><img src="images/marquee3-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/marquee6-min.jpg"><img src="images/marquee6-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/barn3-min.jpg"><img src="images/barn3-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/barn4-min.jpg"><img src="images/barn4-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/marquee12-min.jpg"><img src="images/marquee12-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/barn5-min.jpg"><img src="images/barn5-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/marquee4-min.jpg"><img src="images/marquee4-min.jpg" width="300px" height="210px"></a></br>
+        <!-- portrait photos -->
+
+    </div>
+  </div>
+  </section>
+
+  <section id="garden_section">
+  <div class="gal_gardens">
+    <div class=" imagegallery textcentre titles gal_titles">
+        <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">G</span>ardens</h1>
+        <!-- landscape photos -->
+        <a data-fancybox="gallery" href="images/boathouse1-min.jpg"><img src="images/boathouse1-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/quay1-min.jpg"><img src="images/quay1-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/boathouse3-min.jpg"><img src="images/boathouse3-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/boathouse4-min.jpg"><img src="images/boathouse4-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/boathouse5-min.jpg"><img src="images/boathouse5-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/garden11-min.jpg"><img src="images/garden11-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/garden12-min.jpg"><img src="images/garden12-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/garden13-min.jpg"><img src="images/garden13-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/garden17-min.jpg"><img src="images/garden17-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/garden19-min.jpg"><img src="images/garden19-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/garden20-min.jpg"><img src="images/garden20-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/garden22-min.jpg"><img src="images/garden22-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/garden23-min.jpg"><img src="images/garden23-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/garden31-min.jpg"><img src="images/garden31-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/garden25-min.jpg"><img src="images/garden25-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/garden26-min.jpg"><img src="images/garden26-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/garden27-min.jpg"><img src="images/garden27-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/garden28-min.jpg"><img src="images/garden28-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/garden29-min.jpg"><img src="images/garden29-min.jpg" width="300px" height="210px"></a>
+        <a data-fancybox="gallery" href="images/garden30-min.jpg"><img src="images/garden30-min.jpg" width="300px" height="210px"></a><br>
+        <!-- portrait photos -->
+        <a data-fancybox="gallery" href="images/boathouse2-min.jpg"><img src="images/boathouse2-min.jpg" width="300px" height="400px"></a>
+        <a data-fancybox="gallery" href="images/garden18-min.jpg"><img src="images/garden18-min.jpg" width="300px" height="400px"></a>
+        <a data-fancybox="gallery" href="images/garden21-min.jpg"><img src="images/garden21-min.jpg" width="300px" height="400px"></a>
+    
+    </div>
+  </div>
+  </section>
 </div>
 
-<div class=" imagegallery textcentre">
-    <h1 class="raleway"><span class="greatvibes caps pink gallerycaps">G</span>ardens</h1>
-    <!-- landscape photos -->
-    <a data-fancybox="gallery" href="images/boathouse1.jpg"><img src="images/boathouse1.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/quay1.jpg"><img src="images/quay1.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/boathouse3.jpg"><img src="images/boathouse3.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/boathouse4.jpg"><img src="images/boathouse4.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/boathouse5.jpg"><img src="images/boathouse5.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/garden11.jpg"><img src="images/garden11.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/garden12.jpg"><img src="images/garden12.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/garden13.jpg"><img src="images/garden13.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/garden17.jpg"><img src="images/garden17.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/garden19.jpg"><img src="images/garden19.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/garden20.jpg"><img src="images/garden20.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/garden22.jpg"><img src="images/garden22.jpg" width="300px" height="210px"></a>
-    <a data-fancybox="gallery" href="images/garden24.jpg"><img src="images/garden24.jpg" width="300px" height="210px"></a></br>
-    <!-- portrait photos -->
-    <a data-fancybox="gallery" href="images/boathouse2.jpg"><img src="images/boathouse2.jpg" width="300px" height="400px"></a>
-    <a data-fancybox="gallery" href="images/garden18.jpg"><img src="images/garden18.jpg" width="300px" height="400px"></a>
-    <a data-fancybox="gallery" href="images/garden21.jpg"><img src="images/garden21.jpg" width="300px" height="400px"></a>
 
-</div>
 
 <footer id="footer">
     <hr class="style14 longer">
-    <div class="col-sm-4"> 
-      <h3> Connect </h3>
-      <p> (+44)2844881318 / (+44)7783345130 </br> oldcourtchapelweddings@gmail.com</p>
-      <a class="hvr-grow" href="https://www.facebook.com/Old-Court-Chapel-Weddings-309148065884780/" target="_blank"><img src="images/Facebook.png" width="35px"/></a>
-      <a class="hvr-grow" href="https://twitter.com/oldcourtchapel" target="_blank"><img src="images/Twitter.png" width="35px"/></a>
-      <a class="hvr-grow" href="https://www.instagram.com/explore/locations/1000072381/old-court-chapel-weddings/" target="_blank"><img src="images/Instagram.png" width="35px"/></a>
-  </div>
-  <div class="col-sm-4">
-      <h3> Where We Are </h3>
-    <p> Old Court Chapel Weddings </br> 60 Old Court </br> Strangford </br> Co. Down </br> Northern Ireland </br> BT30 7NB 
-    </p>    
-  </div> 
+    <div class="row footer_content">
 
-  <div class="col-sm-4">
-      <h3> Website Info </h3>
-    <p>Website Designed by Katie Maxwell</p>
-    <a class="hvr-grow" href="https://www.linkedin.com/in/katie-maxwell-254826a4/" target="_blank"><img src="images/Linkedin.png" width="30px"/></a>
-    <a class="hvr-grow" href="https://github.com/kgmaxwell1990" target="_blank"><img src="images/Github.png" width="30px"/></a>
-    <p>Copyright © 2017</p>
-  </div>
+        <div class="col-sm-4 dark_purple quick_links">
+                <h3> Quick Links </h3>
+                <a class="hvr-grow" href="pricing.html"><p> Pricing </p></a>
+                <a class="hvr-grow" href="vendors.html"><p> Vendors </p></a>
+                <a class="hvr-grow" href="contact.html"><p> Contact Us</p></a>
+                <a class="hvr-grow" href="#" data-toggle="modal" data-target="#thingsModal"><p> Things to do around Strangford</p></a>
+        </div>
 
+        <div class="col-sm-4">
+            <h3> Where We Are </h3>
+            <p> Old Court Chapel Weddings <br> Strangford <br> Co. Down <br> Northern Ireland <br> BT30 7NB 
+            </p>    
+        </div> 
+
+        <div class="col-sm-4"> 
+                <h3> Connect </h3>
+                <p> (+44)2844881318 / (+44)7783345130 <br> oldcourtchapelweddings@gmail.com</p>
+                <div class="smbuttons">
+                <a class="hvr-grow" href="https://www.facebook.com/Old-Court-Chapel-Weddings-309148065884780/" target="_blank"><img src="images/Facebook.png" width="35px"/></a>
+                <a class="hvr-grow" href="https://twitter.com/oldcourtchapel" target="_blank"><img src="images/Twitter.png" width="35px"/></a>
+                <a class="hvr-grow" href="https://www.instagram.com/explore/locations/1000072381/old-court-chapel-weddings/" target="_blank"><img src="images/Instagram.png" width="35px"/></a>
+                </div>
+        </div>
+
+
+    </div>
 </footer>
 
-<!--links to javascript and jquery-->
-  <script type="text/javascript" src="lib/js/jquery-3.2.1.js"></script>
-  <script type="text/javascript" src="lib/js/bootstrap.js"></script>
-	<script type="text/javascript" src="lib/js/jquery.fancybox.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
-  
+    <div class="row website_info ">
+    <div class="col-sm-12 dark_purple">
+        <p>Website Designed by Katie Maxwell</p>
+        <a class="hvr-grow" href="https://www.linkedin.com/in/katie-maxwell-254826a4/" target="_blank"><img src="images/Linkedin.png" width="25px"/></a>
+        <a class="hvr-grow" href="https://github.com/kgmaxwell1990" target="_blank"><img src="images/Github.png" width="25px"/></a>
+        <p>Copyright © 2017</p>
+    </div>
+    </div>
 
-  
+
+</div>
+
+    
+
+
+<!--links to javascript and jquery-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.1/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPV01PlDYzI7UEu4u1lxdB97B0Mcg_c_g&callback=initMap">
+  </script>
 
 </body>
 

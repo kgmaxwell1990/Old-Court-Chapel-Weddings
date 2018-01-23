@@ -15,7 +15,7 @@ Follow the below instructions clone this project
 * Click 'Clone or download' dropdown button at the top of this screen
 * Copy link - https://github.com/kgmaxwell1990/Old-Court-Chapel-Weddings.git
 * In your terminal navigate to folder you want to save the project
-* `$ git clone https://github.com/kgmaxwell1990/Old-Court-Chapel-Weddings.git`
+* `$ git clone https://github.com/kgmaxwell1990/old-court-chapel-weddings.git`
 * New folder will contain all files of the project
 
 ## Testing

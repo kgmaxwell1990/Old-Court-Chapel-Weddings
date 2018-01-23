@@ -1,8 +1,12 @@
 body {
-    background-color: #fffff0;
+    background-color: white;
     color: white;
     position: relative;
 
+}
+
+.container-fluid {
+    padding: 0;
 }
 
 h1,
@@ -11,22 +15,38 @@ h3,
 h4,
 h5,
 h6 {
-    color: black;
+    color: rgb(59, 11, 48);
     font-family: 'Great Vibes', sans-serif;
     font-weight: 700;
     text-align: center;
     text-transform: none;
+    font-weight: 100;
 }
 
 p {
     color: black;
 	font-size: 12px;
     text-align: center;
+    font-weight: 100;
 }
 
 a {
     color: grey;
-	text-decoration: none;
+    text-decoration: none;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(59, 11, 48);
+}
+
+a:focus {
+    border: none;
+    text-decoration: none;
 }
 
 .raleway {
@@ -38,11 +58,32 @@ a {
 }
 
 .pink {
-    color:rgb(199, 151, 173);
+    color:#6A0136;
+}
+
+.dark_purple {
+    color: rgb(59, 11, 48);
 }
 
 .textcentre {
     text-align: center;
+}
+
+.align_right {
+    text-align: right;
+}
+
+.align_right h2,
+.align_right ul {
+    text-align: right;
+}
+
+.align_left {
+    text-align: left;
+}
+
+.capitals {
+    text-transform: uppercase;
 }
 
 hr.style14 { 
@@ -59,6 +100,43 @@ hr.style14 {
 hr.longer {
     margin-left: 2%;
     margin-right: 2%;
+}
+
+.messages {
+    color: rgb(255, 255, 240);
+    font-size: 15px;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: rgb(59, 11, 48);
+    border: none;
+    margin: 0;
+
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-body h3 {
+    font-family: Raleway, sans-serif;
+    font-size: 15px;
+}
+
+.smbuttons {
+    padding-top: 20px;
+}
+
+.fancy_letter_heading {
+    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
@@ -82,6 +160,43 @@ hr.longer {
   transform: scale(1.1);
 }
 
+/* Pulse */
+@-webkit-keyframes hvr-pulse {
+    25% {
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+    75% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+  @keyframes hvr-pulse {
+    25% {
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+    75% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+  .hvr-pulse {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-animation-name: hvr-pulse;
+    animation-name: hvr-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+
 /*-------------------------------------------------------*/
 /*-------------------navbar & header CSS-----------------*/
 
@@ -90,20 +205,32 @@ hr.longer {
 } 
 
 .navbar-default {
-    background-color:rgb(199, 151, 173);
+    background-color: rgba(238, 238, 238, 0.8);
 }
 
 .navbar .navbar-brand {
-	color: #FFFFF0;
+	color: rgb(59, 11, 48);
 	font-family: 'Great Vibes', cursive;
 	font-size: 1.3em;
-	text-shadow: 1px 1px 1px black;
 	text-transform: none;
 }
 
-.navbar .navbar-toggle {
-	background-color: #FFFFF0;
-	border-color: #FFFFF0;
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background: none;
+}
+
+/* .navbar .navbar-toggle {
+    background: none;
+    border:none;
+} */
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: rgb(59, 11, 48);
 }
 
 .address-bar {
@@ -120,30 +247,36 @@ hr.longer {
 }
 
 .navbar .navbar-nav > li > a {
-	color: #FFFFF0;
+	color: rgb(59, 11, 48);
     cursor: pointer;
 	font-family: Raleway;
     font-size: 20px;
     text-align: center;
-	text-shadow: 1px 1px 1px black;
+    letter-spacing: 2px;
     text-transform: uppercase; 
 }
 
 .navbar .navbar-nav > li > a:hover {
-    color: #FFFFF0;
-	text-shadow: 2px 2px 2px black;
-	transform: scale(1.15, 1.15);
+    color: rgb(59, 11, 48);
+	/* text-shadow: 2px 2px 2px black; */
+	transform: scale(1.25, 1.25);
 	transition: scale 4000 ease;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: transparent;
+    background-color: transparent;
 }
 
 .header {
     box-shadow: 0 2px 3px black;
     padding-bottom: 120px;
     padding-top: 150px;
+    text-align: center;
 }
 
 .header1 {
-    background: url("insidechapel5.jpg") no-repeat center center fixed;
+    background: no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -151,7 +284,7 @@ hr.longer {
 }
 
 .header2 {
-    background: url("marquee8.jpg") no-repeat center center fixed;
+    background: no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -161,17 +294,17 @@ hr.longer {
 }
 
 .header3 {
-    background: url("insidechapel8.jpg") no-repeat center center fixed;
+    background: no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover; 
-    padding-bottom: 200px;
+    padding-bottom: 112px;
     padding-top: 200px;
 }
 
 .header4 {
-    background: url("garden13.jpg") no-repeat center center fixed;
+    background: no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -181,7 +314,7 @@ hr.longer {
 }
 
 .header5 {
-    background: url("marquee3.jpg") no-repeat center center fixed;
+    background: no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -197,9 +330,9 @@ hr.longer {
     text-shadow: 1px 1px 1px black;
     font-family: 'Great Vibes', cursive;
     font-size: 70px;
-    font-weight: 700;
+    font-weight: 200;
     line-height: normal;
-    color: #FFFFF0;
+    color: rgb(255, 255, 240);
 }
 
 .address-bar {
@@ -212,54 +345,112 @@ hr.longer {
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 2px;
-    color: #FFFFF0;
+    color: white;
 }
 
 /*-------------------------------------------------------*/
 /*---------------------index.html CSS--------------------*/
 
+#downarrow {
+    padding-top: 70px;
+}
+
+#mainindexsection {
+    padding-top: 25px;
+}
+
+.linetopmargin {
+    margin-bottom: 28px;
+}
+
 .intro {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 30px;
 }
 
 .intro > p {
     font-size: 20px;
 }
 
-.imagesacross {
-    text-align: center;
-    width: 100%;
-}
-
-.imagesacross > img {
-    margin: 10px;
-    border-radius: 10px;
-} 
-
 .caps {
     font-size: 30px;
 }
 
+
+
 .cards {
-	text-align: center;
+    text-align: center;
+
 }
 
-.card{
-    position:relative;
+.card {
+    /* box-shadow: 0 2px 3px black; */
+    text-align: center;
 }
 
-.card > a > img {
-    border-radius: 10px;
-    margin-top: 10px;
+
+.card1 {
+    background: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    /* background-size: cover; */
+    -o-background-size: cover; 
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-top: 9px;
+}
+
+.card2 {
+    background:  center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.card3 {
+    background:center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.card4 {
+    background:center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+
+.card h3 {
+    display: inherit;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+    font-weight: 200;
+    line-height: normal;
+    color: rgb(255, 255, 240);
 }
 
 .description {
 	position:absolute;
 	bottom:30%;
 	width:100%;
-	background-color:rgba(255,255,240, 0.7);
-	color:black;
+	background-color:rgba(255,255,255, 0.6);
+    color:black;
+    text-align: center;
 }
 
 .description_content{
@@ -276,18 +467,106 @@ video {
 /*-------------------------------------------------------*/
 /*--------------------gallery.html CSS-------------------*/
 
+
+/* .gal_section {
+    margin-top: 100px;
+} */
+
+
+
+#garden_section,
+#vid_section,
+#reception_section,
+#chapel_section {
+    padding-top: 120px;
+}
+
+.gal_menu {
+    background-color: rgb(59, 11, 48);
+    border: none;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    position:fixed;
+    width:100%;
+    height: 50px;
+    z-index:100;
+
+}
+
+.gal_menu ul li {
+    display: inline-block;
+    margin-top: 15px;
+
+}
+
+.gal_menu ul li a {
+    color: rgb(255, 255, 240);
+    font-size: 12px;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 2px;
+    
+    text-align: center;
+}
+
+.gal_video p {
+    font-size: 15px;
+}
+
 .gallerycaps {
     margin-right: 10px;
 }
 
-.titles> h1 {
-    font-size: 20px;
-}
 
 .imagegallery > a > img {
     margin-bottom: 5px;
     border-radius: 10px;
 }
+
+#video {
+    text-align: center;
+    margin: 0 auto;
+    width: 95%;
+    background-color: black;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+#video video {
+    width: 90%;
+}
+
+#video > p {
+    color: white;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+}
+
+
+/*-------------------------------------------------------*/
+/*--------------------pricing.html CSS-------------------*/
+
+.days_leading_up {
+    font-size: 15px;
+}
+
+.included_titles {
+    margin: 30px 0;
+}
+
+.included_titles > h2 {
+    font-size: 30px;
+}
+
+.included_titles > ul > li > p {
+    font-size: 15px;
+}
+
+
 
 /*-------------------------------------------------------*/
 /*--------------------vendors.html CSS-------------------*/
@@ -302,20 +581,20 @@ video {
 }
 
 button.accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: rgba(255, 255, 255, .15);
+    color: rgb(59, 11, 48);
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    border: none;
+    /* border: double rgb(59, 11, 48); */
     text-align: left;
     outline: none;
-    font-size: 40px;
     transition: 0.4s;
     font-family: 'great vibes', sans-serif;
-    border-radius: 30px;
+    border-radius: 10px;
     text-align: center;
     margin-bottom: 5px;
+    font-size: 30px;
 }
 
 button.accordion > h1 {
@@ -324,12 +603,12 @@ button.accordion > h1 {
 }
 
 button.accordion.active, button.accordion:hover {
-    background-color: #ddd;
+    background-color: rgba(100, 1, 54, 0.3);
 }
 
 button.accordion:after {
     content: '\002B';
-    color: #777;
+    color: rgb(59, 11, 48);
     font-weight: bold;
     float: right;
     margin-left: 5px;
@@ -354,11 +633,13 @@ div.panel {
 
 #map {
 	height:300px;
-	width: 100%;
+    width: 100%;
+    margin-top: 25px;
     -webkit-box-shadow:  1px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.75);
     box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.75);
 }
+
 
 fieldset {
 	padding: 20px;
@@ -371,45 +652,147 @@ label, input {
     color: BLACK;
 }
 
-.btn-primary {
+.btn-success {
     background-color:gray;
     border: none;
+    width: 50%;
+    font-family: Raleway;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.btn-primary:hover {
-    background-color: rgb(199, 151, 173);
-    color: black;
+.btn-success:hover {
+    background-color: rgb(59, 11, 48);
 }
+
 
 .form-group {
     text-align: center;
 }
 
+#div_id_contact_name > label,
+#div_id_contact_email > label,
+#div_id_content > label {
+    color: rgb(59, 11, 48);
+    font-family: 'Great Vibes', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-transform: none;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.titles > h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+textarea.form-control {
+    max-height: 147px;
+}
+
+.contactform {
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.sm_buttons_contact {
+    margin-bottom: 20px;
+}
+
+
 /*-------------------------------------------------------*/
 /*------------------------footer CSS---------------------*/
 
 #footer {
-  height: 360px;
   width: 100%;
   bottom: 0;
   text-align: center;
+  background-color: white;
+  background-image: url("https://www.transparenttextures.com/patterns/dimension.png");
+  margin-top: 50px;
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.footer_content {
+    padding: 10px 10px 35px 10px;
+}
+
+.footer_content div h3 {
+    font-size: 30px;
 }
 
 footer p {
     margin: 0;
-    padding: 10px;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+}
+
+.website_info {
+    background: rgb(59, 11, 48);
+    padding: 5px;
+    text-align: center;
+}
+
+.website_info p,
+.website_info a{
+    display: inline-block;
+    color: #fafafa;
+}
+
+.quick_links a {
+    display: block;
 }
 
 
 /*-------------------------------------------------------*/
 
+.header1,
+.header2,
+.header3,
+.header4,
+.header5{
+    display: none;
+}
+
+.header1mob,
+.header2mob,
+.header3mob,
+.header4mob,
+.header5mob {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+    width: 100%;
+} 
+
+
 /*==============================================MEDIA QUERY=========================================*/
+
+
+
 
 @media screen and (min-width:768px) {
 
+.container-fluid {
+        padding: 0;
+    }
+
+.messages {
+    margin-top: 70px;
+}
+
+.modal-body h3 {
+    font-size: 20px;
+}
+
 p {
     font-size: 14px;
+    font-family: Raleway, sans-serif;
 }
 
 .navbar-header {
@@ -418,7 +801,7 @@ p {
 
 .navbar {
     border: none;
-    background: rgba(199, 151, 173, 0.9);
+    background: rgba(238, 238, 238, 0.9);
     margin-bottom: 45px;
 }
 
@@ -429,8 +812,8 @@ p {
 .navbar
 .navbar-nav > li > a {
     line-height: normal;
-    color: #FFFFF0;
-    font-size: 17px;
+    color: rgb(59, 11, 48);
+    font-size: 16px;
 }
 
 .navbar-nav {
@@ -475,7 +858,8 @@ margin: 0;
 }
 
 .description_content{
-	padding:60px;
+    padding:60px;
+    font-size: 45px;
 }
 
 .titles > h1 {
@@ -487,8 +871,12 @@ margin: 0;
 }
 
 .row {
-    margin-bottom: 20px;
     width: 100%;
+    margin: 0;
+}
+
+#bar_info {
+    font-size: 16px;
 }
 
 button.accordion {
@@ -496,8 +884,8 @@ button.accordion {
 }
 
 #vendorslist {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .panel {
@@ -505,10 +893,137 @@ button.accordion {
     border: none;
 }
 
-#footer {
-    height: 200px;
+.footer_content {
+    padding-bottom: 40px;
 
 }
+
+.titles > h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 100;
 }
 
+.contact_page_details {
+    padding: 30px 10px;
+}
+
+.days_leading_up {
+    font-size: 20px;
+}
+
+#video {
+    width: 60%;
+}
+
+#video video {
+    width: 90%;
+}
+
+.gal_menu ul li {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.gal_titles > h1 {
+    font-size: 30px;
+    /* margin-bottom: 60px; */
+    letter-spacing: 5px;
+}
+
+.gal_titles h1 span {
+    font-size: 70px;
+}
+
+.cards {
+    margin-top: 29px;
+    /* margin-bottom: 75px; */
+}
+
+.card h3 {
+
+    font-size: 50px;
+
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+    padding-bottom: 150px;
+    padding-top: 150px;
+    background: center fixed;
+    background-size: cover;
+}
+
+
+.contactform {
+    padding: 0;
+}
+
+.header1mob,
+.header2mob,
+.header3mob,
+.header4mob,
+.header4mob,
+.header5mob {
+    display: none;
+}
+
+ .header1,
+ .header2,
+ .header3,
+ .header4,
+ .header5 {
+    display: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+    position: relative;
+    width: 100%;
+    height:600px;
+} 
+
+.header1 {
+    height: 700px;
+    margin-top: -30px;
+}
+
+.header3 {
+    margin-top: -30px;
+}
+
+.header4 {
+
+    margin-top: -30px;
+}
+
+.card1 {
+    margin-top: 0;
+}
+
+.footer_content div h3 {
+    font-size: 24px;
+}
+
+footer p {
+
+    font-size: 12px;
+}
+
+}
+
+
+@media screen and (min-width:850px) {
+    
+        .navbar
+        .navbar-nav > li > a {
+            font-size: 20px;
+        }
+    
+    }
 
